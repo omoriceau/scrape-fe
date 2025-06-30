@@ -1,0 +1,160 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Custom prose styles for better readability */
+.prose {
+  @apply max-w-none text-base-content;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply scroll-mt-16 text-base-content font-bold;
+}
+
+.prose a {
+  @apply link link-primary no-underline hover:underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary bg-base-200 p-4 my-6 rounded-r-lg;
+}
+
+.prose code {
+  @apply badge badge-neutral text-sm px-2 py-1;
+}
+
+.prose pre {
+  @apply bg-base-300 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.prose pre code {
+  @apply bg-transparent text-base-content p-0;
+  display: inline;
+  border-radius: 0;
+}
+
+.prose table {
+  @apply table table-zebra w-full my-6;
+}
+
+.prose thead {
+  @apply bg-base-200;
+}
+
+.prose th {
+  @apply font-semibold text-base-content p-3;
+}
+
+.prose td {
+  @apply p-3;
+}
+
+.prose img {
+  @apply rounded-lg shadow-md my-6 max-w-full h-auto;
+}
+
+.prose hr {
+  @apply border-base-300 my-8;
+}
+
+.prose ul,
+.prose ol {
+  @apply my-4;
+}
+
+.prose li {
+  @apply my-2;
+}
+
+/* Table hover styles */
+.prose table tr.hover:hover,
+.prose table tr.hover:nth-child(even):hover {
+  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+  --tw-bg-opacity: 1;
+}
+
+/* Language switcher styles */
+.language-switcher {
+  @apply dropdown dropdown-end;
+}
+
+.language-switcher summary {
+  @apply btn btn-ghost btn-sm;
+}
+
+.language-switcher ul {
+  @apply dropdown-content menu p-2 shadow bg-base-100 rounded-box w-32;
+}
+
+/* Navigation styles */
+.site-nav {
+  @apply navbar bg-base-100 shadow-sm;
+}
+
+.site-nav .navbar-brand {
+  @apply text-xl font-bold;
+}
+
+/* Content layout */
+.content-container {
+  @apply container mx-auto px-4 py-8 max-w-4xl;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-container {
+    @apply px-4 py-6;
+  }
+  
+  .prose {
+    @apply text-sm;
+  }
+  
+  .prose h1 {
+    @apply text-2xl;
+  }
+  
+  .prose h2 {
+    @apply text-xl;
+  }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Focus styles */
+.btn:focus,
+.link:focus,
+button:focus,
+a:focus {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
