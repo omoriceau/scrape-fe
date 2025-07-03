@@ -1,17 +1,18 @@
+<!-- /routes/+layout.svelte-->
 <script>
   import '../app.css';
-  import Navigation from '$lib/components/Navigation.svelte';
-  import { page } from '$app/stores';
   import { initializeMarkdownData } from '$lib/markdown.js';
-  import { onMount } from 'svelte';
-  import * as m from '../paraglide/messages.js';
+  import Navigation from '$lib/components/Navigation.svelte';
+  import Footer from '$lib/components/Footer.svelte';
+  import { page } from '$app/stores';
+  
 
   /** @type {import('./$types').LayoutData} */
   export let data;
   
   // Initialize markdown data from server
   initializeMarkdownData(data.markdownData);
-  
+
   // Get current page from page store if available - with better null checking
   $: currentPage = (() => {
     try {
@@ -34,24 +35,15 @@
   })();
 
   // Debug logging
-  $: console.log('Layout: currentPage =', currentPage);
+  //$: console.log('Layout: currentPage =', currentPage);
 </script>
 
 <div class="min-h-screen bg-base-100">
   <Navigation {currentPage} />
-  
+
   <main class="content-container">
     <slot />
   </main>
   
-  <footer class="footer footer-center p-6 bg-base-200 text-base-content mt-12">
-    <div>
-      <p class="text-sm opacity-70">
-        {m.built_with()}
-        <a href="https://svelte.dev" class="link link-primary" target="_blank" rel="noopener">Svelte</a>, 
-        <a href="https://tailwindcss.com" class="link link-primary" target="_blank" rel="noopener">Tailwind CSS</a>, and 
-        <a href="https://daisyui.com" class="link link-primary" target="_blank" rel="noopener">DaisyUI</a>
-      </p>
-    </div>
-  </footer>
+  <Footer />
 </div>

@@ -1,22 +1,41 @@
+<!-- routes/+page.svelte -->
 <script>
   import { getPagesByLanguage, getAvailableLanguages } from '$lib/markdown.js';
   import * as m from '$paraglide/messages.js';
-  import { page } from '$app/stores';
+  import { setLanguage, currentLanguage } from '$lib/i18n.js';
+  import { onMount } from 'svelte';
   
   const languages = getAvailableLanguages();
   
-  // Get all pages for display
-  let allPages = [];
-  languages.forEach(lang => {
-    const pages = getPagesByLanguage(lang);
-    allPages = [...allPages, ...pages];
-  });
+  // Make these reactive to language changes
+  $: {
+    // Re-run this block whenever currentLanguage changes
+    console.log('Current language changed to:', $currentLanguage);
+    
+    // Get all pages for display
+    allPages = [];
+    languages.forEach(lang => {
+      const pages = getPagesByLanguage(lang);
+      allPages = [...allPages, ...pages];
+    });
+    
+    // Group pages by language
+    pagesByLanguage = {};
+    languages.forEach(lang => {
+      pagesByLanguage[lang] = getPagesByLanguage(lang);
+    });
+
+    // Find home pages for quick access
+    homePages = {
+      en: allPages.find(page => page.slug === 'home' && page.lang === 'en'),
+      fr: allPages.find(page => page.slug === 'accueil' && page.lang === 'fr')
+    };
+  }
   
-  // Group pages by language
-  const pagesByLanguage = {};
-  languages.forEach(lang => {
-    pagesByLanguage[lang] = getPagesByLanguage(lang);
-  });
+  // Initialize these as reactive variables
+  let allPages = [];
+  let pagesByLanguage = {};
+  let homePages = {};
 
   const languageNames = {
     'en': 'English',
@@ -26,11 +45,20 @@
     'it': 'Italiano',
   };
 
-  // Find home pages for quick access
-  const homePages = {
-    en: allPages.find(page => page.slug === 'home' && page.lang === 'en'),
-    fr: allPages.find(page => page.slug === 'accueil' && page.lang === 'fr')
-  };
+  // Handle language change with better debugging
+  function handleLanguageChange(lang) {
+    console.log('Button clicked, changing to:', lang);
+    setLanguage(lang);
+    
+    // Optional: Add a small delay to ensure the change propagates
+    setTimeout(() => {
+      console.log('Language after change:', $currentLanguage);
+    }, 100);
+  }
+
+  onMount(() => {
+    console.log('Component mounted, current language:', $currentLanguage);
+  });
 </script>
 
 <svelte:head>
@@ -53,20 +81,33 @@
         <div class="badge badge-accent badge-lg">{m.badge_markdown()}</div>
       </div>
       
-      <!-- Quick language access -->
+      <!-- Quick language access with better event handling -->
       {#if homePages.en || homePages.fr}
         <div class="flex gap-4 justify-center mt-6">
           {#if homePages.en}
-            <a href="/home" class="btn btn-primary btn-sm">
+            <button 
+              on:click={() => handleLanguageChange('en')} 
+              class="btn btn-primary btn-sm"
+              class:btn-outline={$currentLanguage !== 'en'}
+            >
               {m.view_in_english()}
-            </a>
+            </button>
           {/if}
           {#if homePages.fr}
-            <a href="/accueil" class="btn btn-secondary btn-sm">
+            <button 
+              on:click={() => handleLanguageChange('fr')} 
+              class="btn btn-secondary btn-sm"
+              class:btn-outline={$currentLanguage !== 'fr'}
+            >
               {m.view_in_french()}
-            </a>
+            </button>
           {/if}
         </div>
+        
+        <!-- Debug info (remove in production) -->
+        <!--div class="mt-4 text-sm opacity-60">
+          Current language: {$currentLanguage}
+        </div-->
       {/if}
     </div>
   </div>

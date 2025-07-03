@@ -1,7 +1,7 @@
 <script>
   import { browser } from '$app/environment';
   import { onMount } from 'svelte';
-  import * as m from '../../paraglide/messages.js';
+  import * as m from '$paraglide/messages.js';
 
   let theme = 'light';
 

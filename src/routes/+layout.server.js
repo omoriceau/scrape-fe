@@ -1,3 +1,4 @@
+// routes/+layout.server.js
 import { content, slugIndex, fileIndex, languageIndex } from '$lib/server/markdown.js';
 import { getPageByFilenameAndLang } from '$lib/markdown.js';
 

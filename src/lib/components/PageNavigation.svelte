@@ -1,6 +1,6 @@
 <script>
   import { getPageNavigation } from '$lib/markdown.js';
-  import * as m from '../../paraglide/messages.js';
+  import * as m from '$paraglide/messages.js';
 
   export let currentPage;
 
