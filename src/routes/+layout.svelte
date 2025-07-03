@@ -4,7 +4,6 @@
   import { initializeMarkdownData } from '$lib/markdown.js';
   import Navigation from '$lib/components/Navigation.svelte';
   import Footer from '$lib/components/Footer.svelte';
-  import { page } from '$app/stores';
   
 
   /** @type {import('./$types').LayoutData} */
@@ -13,20 +12,15 @@
   // Initialize markdown data from server
   initializeMarkdownData(data.markdownData);
 
-  // Get current page from page store if available - with better null checking
+  // Get current page from layout data with better null checking
   $: currentPage = (() => {
     try {
-      // First try to get from page data
-      if ($page?.data?.markdownData?.currentPage) {
-        return $page.data.markdownData.currentPage;
-      }
-      
-      // Fallback to layout data if page data isn't available yet
+      // Try to get from layout data
       if (data?.markdownData?.currentPage) {
         return data.markdownData.currentPage;
       }
       
-      // Return null if neither is available
+      // Return null if not available
       return null;
     } catch (error) {
       console.warn('Error accessing currentPage:', error);

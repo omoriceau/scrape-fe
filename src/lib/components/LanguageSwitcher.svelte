@@ -3,7 +3,7 @@
   import { switchLanguage, getAvailableLanguages } from '$lib/markdown.js';
   import { goto } from '$app/navigation';
   import { setLanguage, currentLanguage } from '$lib/i18n.js';
-  import { page } from '$app/stores';
+  import { browser } from '$app/environment';
 
   export let currentPage;
 
@@ -38,8 +38,11 @@
     // Update UI language first
     setLanguage(targetLang);
 
-    // Get current path without language prefix
-    let currentPath = $page.url.pathname;
+    // Get current path from window.location if in browser
+    let currentPath = '/';
+    if (browser) {
+      currentPath = window.location.pathname;
+    }
     
     // Remove existing language prefix if present
     if (currentPath.startsWith('/fr/')) {
