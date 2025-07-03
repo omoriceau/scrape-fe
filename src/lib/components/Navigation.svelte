@@ -6,12 +6,10 @@
   import * as m from '$paraglide/messages.js';
 
   export let currentPage = null;
-
-  //console.log('Navigation.svelte: currentPage =', currentPage);
   
   // React to language changes
   $: {
-    console.log('Navigation.svelte: Current language is', $currentLanguage);
+    //console.log('Navigation.svelte: Current language is', $currentLanguage);
   }
 </script>
 
