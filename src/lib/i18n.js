@@ -1,6 +1,6 @@
 //i18n.js - Type-safe version with reactive updates
 import { browser } from '$app/environment';
-import { writable, get } from 'svelte/store';
+import { writable, get, derived } from 'svelte/store';
 
 // Try the correct Paraglide imports - these are the standard function names
 // @ts-ignore
@@ -22,6 +22,28 @@ const SUPPORTED_LANGUAGES = /** @type {SupportedLanguage[]} */ (availableLanguag
  */
 function isSupportedLanguage(lang) {
   return SUPPORTED_LANGUAGES.includes(/** @type {SupportedLanguage} */ (lang));
+}
+
+// Create a derived store that tracks language changes for reactive updates
+export const languageChanged = derived(currentLanguage, ($currentLanguage, set) => {
+  // This will trigger whenever currentLanguage changes
+  set(Date.now());
+});
+
+/**
+ * Get language display name
+ * @param {SupportedLanguage} lang
+ * @returns {string}
+ */
+export function getLanguageDisplayName(lang) {
+  const names = {
+    'en': 'English',
+    'fr': 'Français',
+    'es': 'Español',
+    'de': 'Deutsch',
+    'it': 'Italiano',
+  };
+  return names[lang] || lang;
 }
 
 // Language detection and management
@@ -126,5 +148,33 @@ if (browser) {
     console.log('i18n.js: Initial paraglide language tag set to', detectedLang);
   } catch (error) {
     console.error('i18n.js: Error setting initial paraglide language tag:', error);
+  }
+}
+
+/**
+ * Get localized date format
+ * @param {string|Date} date
+ * @param {SupportedLanguage} [lang]
+ * @returns {string}
+ */
+export function formatDate(date, lang = null) {
+  if (!date) return '';
+  
+  const targetLang = lang || get(currentLanguage);
+  const dateObj = typeof date === 'string' ? new Date(date) : date;
+  
+  try {
+    return dateObj.toLocaleDateString(targetLang, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  } catch (error) {
+    console.error('i18n.js: Error formatting date:', error);
+    return dateObj.toLocaleDateString('en', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
   }
 }
