@@ -4,13 +4,28 @@
   import * as m from '$paraglide/messages.js';
   import { setLanguage, currentLanguage } from '$lib/i18n.js';
   import { onMount } from 'svelte';
+  import { invalidateAll } from '$app/navigation';
   
   const languages = getAvailableLanguages();
+  let previousLanguage = $currentLanguage;
+  let messageKey = 0; // Force re-render of messages
   
   // Make these reactive to language changes
   $: {
     // Re-run this block whenever currentLanguage changes
     console.log('Current language changed to:', $currentLanguage);
+    
+    // Force reload data when language changes
+    if (previousLanguage !== $currentLanguage) {
+      console.log('Language changed from', previousLanguage, 'to', $currentLanguage);
+      previousLanguage = $currentLanguage;
+      
+      // Force invalidate all data
+      invalidateAll();
+      
+      // Force re-render by updating a reactive variable
+      messageKey = Date.now();
+    }
     
     // Get all pages for display
     allPages = [];
@@ -50,14 +65,16 @@
     console.log('Button clicked, changing to:', lang);
     setLanguage(lang);
     
-    // Optional: Add a small delay to ensure the change propagates
+    // Force a complete reload of the page data
     setTimeout(() => {
       console.log('Language after change:', $currentLanguage);
+      invalidateAll();
     }, 100);
   }
 
   onMount(() => {
     console.log('Component mounted, current language:', $currentLanguage);
+    previousLanguage = $currentLanguage;
   });
 </script>
 
@@ -69,17 +86,20 @@
 <div class="hero bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl mb-12">
   <div class="hero-content text-center py-16">
     <div class="max-w-md">
-      <h1 class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-        {m.site_title()}
-      </h1>
-      <p class="py-6 text-lg opacity-80">
-        {m.site_tagline({ name: 'Svelte' })}
-      </p>
-      <div class="flex gap-4 justify-center">
-        <div class="badge badge-primary badge-lg">{m.badge_svelte_version()}</div>
-        <div class="badge badge-secondary badge-lg">{m.badge_multi_language()}</div>
-        <div class="badge badge-accent badge-lg">{m.badge_markdown()}</div>
-      </div>
+      <!-- Force reactivity with key -->
+      {#key messageKey}
+        <h1 class="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          {m.site_title()}
+        </h1>
+        <p class="py-6 text-lg opacity-80">
+          {m.site_tagline({ name: 'Svelte' })}
+        </p>
+        <div class="flex gap-4 justify-center">
+          <div class="badge badge-primary badge-lg">{m.badge_svelte_version()}</div>
+          <div class="badge badge-secondary badge-lg">{m.badge_multi_language()}</div>
+          <div class="badge badge-accent badge-lg">{m.badge_markdown()}</div>
+        </div>
+      {/key}
       
       <!-- Quick language access with better event handling -->
       {#if homePages.en || homePages.fr}
@@ -90,7 +110,10 @@
               class="btn btn-primary btn-sm"
               class:btn-outline={$currentLanguage !== 'en'}
             >
-              {m.view_in_english()}
+              <!-- Force reactivity for button text -->
+              {#key messageKey}
+                {m.view_in_english()}
+              {/key}
             </button>
           {/if}
           {#if homePages.fr}
@@ -99,20 +122,24 @@
               class="btn btn-secondary btn-sm"
               class:btn-outline={$currentLanguage !== 'fr'}
             >
-              {m.view_in_french()}
+              <!-- Force reactivity for button text -->
+              {#key messageKey}
+                {m.view_in_french()}
+              {/key}
             </button>
           {/if}
         </div>
         
         <!-- Debug info (remove in production) -->
-        <!--div class="mt-4 text-sm opacity-60">
+        <div class="mt-4 text-sm opacity-60">
           Current language: {$currentLanguage}
-        </div-->
+        </div>
       {/if}
     </div>
   </div>
 </div>
 
+<!-- Rest of your component remains the same... -->
 {#if allPages.length > 0}
   <div class="grid gap-8">
     <div class="text-center">

@@ -1,9 +1,9 @@
+<!-- /src/lib/components/LanguageSwitcher.svelte -->
 <script>
   import { switchLanguage, getAvailableLanguages } from '$lib/markdown.js';
   import { goto } from '$app/navigation';
   import { setLanguage, currentLanguage } from '$lib/i18n.js';
   import { page } from '$app/stores';
-  import * as m from '$paraglide/messages.js';
 
   export let currentPage;
 
@@ -38,31 +38,35 @@
     // Update UI language first
     setLanguage(targetLang);
 
-    // If we're on the home page (root path), just reload in the new language
-    if ($page.url.pathname === '/') {
-      // Stay on the home page, just with the new language
-      console.log('LanguageSwitcher: Staying on home page with new language');
-      return;
+    // Get current path without language prefix
+    let currentPath = $page.url.pathname;
+    
+    // Remove existing language prefix if present
+    if (currentPath.startsWith('/fr/')) {
+      currentPath = currentPath.substring(3);
+    } else if (currentPath.startsWith('/fr')) {
+      currentPath = currentPath.substring(3);
+    }
+    
+    // Handle root path
+    if (currentPath === '/fr' || currentPath === '') {
+      currentPath = '/';
     }
 
-    // If we have a current page, try to find its equivalent in the target language
-    if (currentPage) {
-      const targetPage = switchLanguage(currentPage, targetLang);
-      if (targetPage) {
-        console.log('LanguageSwitcher: Found target page', targetPage);
-        await goto(`/${targetPage.slug}`);
-        return;
-      }
+    // Build new path with language prefix
+    let newPath;
+    if (targetLang === 'en') {
+      // English is the default, no prefix needed
+      newPath = currentPath === '/' ? '/' : currentPath;
+    } else {
+      // Add language prefix for non-English languages
+      newPath = `/${targetLang}${currentPath === '/' ? '' : currentPath}`;
     }
+
+    console.log('LanguageSwitcher: Navigating to', newPath);
     
-    // If page doesn't exist in target language, reload current page with new language
-    // This will show the content in the new language even if the specific page doesn't exist
-    console.log(`LanguageSwitcher: Page not available in ${targetLang}, staying on current page`);
-    
-    // Instead of redirecting, just reload the current page
-    // The language change will be reflected in the UI
-    // If you want to force a reload, you can use:
-    // window.location.reload();
+    // Navigate to the new path
+    await goto(newPath, { invalidateAll: true });
   }
 
   // React to language changes from other components
@@ -79,7 +83,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.605 0 3.192.083 4.75.371m-4.75-.371v15.75m0-15.75c-1.92-.025-5.75 0-5.75 0s-3.83-.025-5.75 0v15.75s3.83.025 5.75 0 5.75 0 5.75 0" />
         </svg>
         <!-- Use the reactive current language instead of currentPage.lang -->
-        {languageNames[$currentLanguage] || $currentLanguage || m.language()}
+        {languageNames[$currentLanguage] || $currentLanguage}
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </svg>
