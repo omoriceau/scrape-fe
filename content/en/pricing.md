@@ -1,72 +1,74 @@
 ---
-title: Pricing
+title: "Pricing Plans"
 slug: pricing
-description: Choose a plan that fits your business needs with transparent pricing and no hidden fees
+description: "Choose the perfect plan for your web scraping needs"
 author: SaaS Team
 date: 2024-01-08
 tags: pricing, plans, subscription, business
 ---
 
-# Pricing
+# Pricing Plans
 
-Choose a plan that fits your business needs.
+Choose the perfect plan for your web scraping needs. All plans include our core scraping features with different usage limits and support levels.
 
-## Simple, Transparent Pricing
+## Free Plan
+- **$0/month**
+- 100 requests per month
+- Basic data extraction
+- JSON output format
+- Community support
+- Rate limit: 1 request per minute
 
-No hidden fees, no surprises. Choose the plan that's right for your business and upgrade or downgrade at any time.
-
-### Starter Plan
-**$29/month**
-
-Perfect for small businesses and startups getting started.
-
-- Up to 5 users
-- 10GB storage
-- Basic reporting
+## Starter Plan
+- **$29/month**
+- 10,000 requests per month
+- All data extraction features
+- Multiple output formats (JSON, CSV, XML)
 - Email support
-- Core features included
+- Rate limit: 10 requests per minute
+- Screenshot capture
+- Custom headers
 
-### Professional Plan
-**$79/month**
-
-Ideal for growing businesses that need more advanced features.
-
-- Up to 25 users
-- 100GB storage
-- Advanced reporting & analytics
+## Professional Plan
+- **$99/month**
+- 100,000 requests per month
+- Advanced scraping features
 - Priority support
+- Rate limit: 50 requests per minute
+- Proxy rotation
+- JavaScript rendering
+- Webhook notifications
 - API access
-- Custom integrations
 
-### Enterprise Plan
-**$199/month**
-
-For large organizations requiring enterprise-grade features.
-
-- Unlimited users
-- 1TB storage
-- Custom reporting
+## Enterprise Plan
+- **Custom pricing**
+- Unlimited requests
+- Dedicated infrastructure
 - 24/7 phone support
-- Advanced security features
-- Dedicated account manager
-- Custom onboarding
+- Custom integrations
+- SLA guarantees
+- On-premise deployment options
 
-## Frequently Asked Questions
+## Features Comparison
 
-### Can I change my plan at any time?
-Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate your billing accordingly.
+| Feature | Free | Starter | Professional | Enterprise |
+|---------|------|---------|--------------|------------|
+| Monthly Requests | 100 | 10,000 | 100,000 | Unlimited |
+| Output Formats | JSON | JSON, CSV, XML | All formats | All formats |
+| Screenshot Capture | ❌ | ✅ | ✅ | ✅ |
+| Proxy Rotation | ❌ | ❌ | ✅ | ✅ |
+| JavaScript Rendering | ❌ | ❌ | ✅ | ✅ |
+| Webhook Notifications | ❌ | ❌ | ✅ | ✅ |
+| Priority Support | ❌ | ❌ | ✅ | ✅ |
+| SLA | ❌ | ❌ | ❌ | ✅ |
 
-### Is there a free trial?
-We offer a 14-day free trial for all plans. No credit card required to get started.
+## FAQ
 
-### What payment methods do you accept?
-We accept all major credit cards, PayPal, and bank transfers for annual subscriptions.
+### Can I change my plan anytime?
+Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.
 
-### Do you offer discounts for annual billing?
-Yes! Save 20% when you pay annually instead of monthly.
+### What happens if I exceed my monthly limit?
+Your requests will be throttled until the next billing cycle. You can upgrade your plan to increase your limits.
 
-## Ready to Get Started?
-
-Choose your plan and start transforming your business today. Need help deciding? [Contact our sales team](/contact-us) for a personalized consultation.
-
-[Start Free Trial](#) | [Contact Sales](/contact-us)
+### Do you offer refunds?
+We offer a 30-day money-back guarantee for all paid plans.

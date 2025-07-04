@@ -41,5 +41,37 @@
   "view_in_english": "View in English",
   "view_in_french": "Voir en Français",
   "page_not_found": "Page non trouvée",
-  "check_markdown_file": "Vérifiez si le fichier markdown existe dans le répertoire de contenu"
+  "check_markdown_file": "Vérifiez si le fichier markdown existe dans le répertoire de contenu",
+  "nav": {
+    "home": "Accueil",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "dashboard": "Tableau de bord",
+    "account": "Compte",
+    "scrape": "Extraire",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "hero": {
+      "title": "Web Scraping Simplifié",
+      "subtitle": "Extrayez des données de n'importe quel site web avec notre API puissante. Rapide, fiable et facile à utiliser.",
+      "cta": "Commencer l'extraction",
+      "try_free": "Essayer gratuitement"
+    },
+    "how_it_works": {
+      "title": "Comment ça marche",
+      "step1": {
+        "title": "1. Entrez l'URL",
+        "description": "Collez simplement l'URL du site web que vous voulez extraire"
+      },
+      "step2": {
+        "title": "2. Configurez les options",
+        "description": "Choisissez vos préférences d'extraction et le format de données"
+      },
+      "step3": {
+        "title": "3. Obtenez les résultats",
+        "description": "Téléchargez vos données extraites en quelques secondes"
+      }
+    }
+  }
 }

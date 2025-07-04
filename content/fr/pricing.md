@@ -1,72 +1,75 @@
 ---
-title: Tarifs
-slug: tarifs
-description: Choisissez un forfait adapté aux besoins de votre entreprise avec des prix transparents et sans frais cachés
+title: "Forfaits et Tarifs"
+slug: forfaits
+description: "Choisissez le forfait parfait pour vos besoins en extraction web"
 author: Équipe SaaS
 date: 2024-01-08
 tags: tarifs, forfaits, abonnement, entreprise
+lang: fr
 ---
 
-# Tarifs
+# Forfaits et Tarifs
 
-Choisissez un forfait adapté aux besoins de votre entreprise.
+Choisissez le forfait parfait pour vos besoins en extraction web. Tous les forfaits incluent nos fonctionnalités principales d’extraction avec des limites d’utilisation et niveaux de support différents.
 
-## Tarification Simple et Transparente
+## Forfait Gratuit
+- **0 $/mois**
+- 100 requêtes par mois
+- Extraction de données basique
+- Format de sortie JSON
+- Support communautaire
+- Limite de fréquence : 1 requête par minute
 
-Pas de frais cachés, pas de surprises. Choisissez le forfait qui convient à votre entreprise et passez à un niveau supérieur ou inférieur à tout moment.
-
-### Forfait Débutant
-**29€/mois**
-
-Parfait pour les petites entreprises et les startups qui commencent.
-
-- Jusqu'à 5 utilisateurs
-- 10 Go de stockage
-- Rapports de base
+## Forfait Débutant
+- **29 $/mois**
+- 10 000 requêtes par mois
+- Toutes les fonctionnalités d’extraction
+- Formats de sortie multiples (JSON, CSV, XML)
 - Support par email
-- Fonctionnalités principales incluses
+- Limite de fréquence : 10 requêtes par minute
+- Capture d’écran
+- En-têtes personnalisés
 
-### Forfait Professionnel
-**79€/mois**
-
-Idéal pour les entreprises en croissance qui ont besoin de fonctionnalités plus avancées.
-
-- Jusqu'à 25 utilisateurs
-- 100 Go de stockage
-- Rapports et analyses avancés
+## Forfait Professionnel
+- **99 $/mois**
+- 100 000 requêtes par mois
+- Fonctionnalités avancées d’extraction
 - Support prioritaire
+- Limite de fréquence : 50 requêtes par minute
+- Rotation des proxies
+- Rendu JavaScript
+- Notifications webhook
 - Accès API
-- Intégrations personnalisées
 
-### Forfait Entreprise
-**199€/mois**
-
-Pour les grandes organisations nécessitant des fonctionnalités de niveau entreprise.
-
-- Utilisateurs illimités
-- 1 To de stockage
-- Rapports personnalisés
+## Forfait Entreprise
+- **Tarification personnalisée**
+- Requêtes illimitées
+- Infrastructure dédiée
 - Support téléphonique 24/7
-- Fonctionnalités de sécurité avancées
-- Gestionnaire de compte dédié
-- Intégration personnalisée
+- Intégrations personnalisées
+- Garanties SLA
+- Options de déploiement sur site
 
-## Questions Fréquemment Posées
+## Comparaison des fonctionnalités
+
+| Fonctionnalité           | Gratuit | Débutant | Professionnel | Entreprise |
+|-------------------------|---------|----------|--------------|------------|
+| Requêtes mensuelles     | 100     | 10 000   | 100 000      | Illimité   |
+| Formats de sortie       | JSON    | JSON, CSV, XML | Tous formats | Tous formats |
+| Capture d’écran         | ❌      | ✅       | ✅           | ✅         |
+| Rotation des proxies    | ❌      | ❌       | ✅           | ✅         |
+| Rendu JavaScript        | ❌      | ❌       | ✅           | ✅         |
+| Notifications webhook   | ❌      | ❌       | ✅           | ✅         |
+| Support prioritaire     | ❌      | ❌       | ✅           | ✅         |
+| SLA                     | ❌      | ❌       | ❌           | ✅         |
+
+## FAQ
 
 ### Puis-je changer de forfait à tout moment ?
-Oui ! Vous pouvez passer à un niveau supérieur ou inférieur à tout moment. Les changements prennent effet immédiatement, et nous ajusterons votre facturation en conséquence.
+Oui, vous pouvez passer à un forfait supérieur ou inférieur à tout moment. Les changements prennent effet immédiatement.
 
-### Y a-t-il un essai gratuit ?
-Nous offrons un essai gratuit de 14 jours pour tous les forfaits. Aucune carte de crédit requise pour commencer.
+### Que se passe-t-il si je dépasse ma limite mensuelle ?
+Vos requêtes seront limitées jusqu’au prochain cycle de facturation. Vous pouvez passer à un forfait supérieur pour augmenter vos limites.
 
-### Quels modes de paiement acceptez-vous ?
-Nous acceptons toutes les principales cartes de crédit, PayPal et les virements bancaires pour les abonnements annuels.
-
-### Offrez-vous des remises pour la facturation annuelle ?
-Oui ! Économisez 20% en payant annuellement au lieu de mensuellement.
-
-## Prêt à Commencer ?
-
-Choisissez votre forfait et commencez à transformer votre entreprise dès aujourd'hui. Besoin d'aide pour décider ? [Contactez notre équipe de vente](/nous-contacter) pour une consultation personnalisée.
-
-[Commencer l'Essai Gratuit](#) | [Contacter les Ventes](/nous-contacter)
+### Offrez-vous des remboursements ?
+Nous proposons une garantie satisfait ou remboursé de 30 jours pour tous les forfaits payants.

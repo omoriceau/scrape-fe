@@ -1,115 +1,161 @@
 ---
-title: Conditions d'Utilisation
+title: "Conditions d’Utilisation"
 slug: conditions
-description: Veuillez lire attentivement nos conditions d'utilisation avant d'utiliser notre plateforme SaaS
+description: "Conditions générales d’utilisation de ScrapeMaster"
 author: Équipe Juridique
 date: 2024-01-12
-tags: conditions, légal, service, accord
+tags: conditions, juridique, service, accord
+lang: fr
 ---
 
-# Conditions d'Utilisation
+# Conditions d’Utilisation
 
-Veuillez lire attentivement nos conditions d'utilisation avant d'utiliser notre plateforme.
+Dernière mise à jour : 15 janvier 2024
 
-*Dernière mise à jour : 12 janvier 2024*
+## Acceptation des Conditions
 
-## 1. Acceptation des Conditions
+En accédant ou en utilisant ScrapeMaster (« Service »), vous acceptez d’être lié par ces Conditions d’Utilisation (« Conditions »). Si vous n’êtes pas d’accord avec une partie de ces conditions, vous ne devez pas utiliser le Service.
 
-En accédant et en utilisant notre plateforme SaaS ("Service"), vous acceptez et convenez d'être lié par les termes et dispositions de cet accord. Si vous n'acceptez pas de respecter ce qui précède, veuillez ne pas utiliser ce service.
+## Description du Service
 
-## 2. Description du Service
+ScrapeMaster fournit des services d’extraction de données web via notre API et interface web. Nous permettons aux utilisateurs d’extraire des données publiques disponibles sur les sites web sous un format structuré.
 
-Notre plateforme fournit un logiciel de gestion d'entreprise en tant que service, incluant mais sans s'y limiter :
+## Comptes Utilisateurs
 
-- Outils de gestion de projet
-- Fonctionnalités de collaboration d'équipe
-- Analyse de données et rapports
-- Capacités d'intégration
-- Services de support client
+### Inscription
+- Vous devez fournir des informations exactes
+- Vous êtes responsable de la sécurité de votre compte
+- Vous devez avoir au moins 18 ans
+- Un compte par personne ou entité
 
-## 3. Comptes Utilisateur
+### Responsabilités du Compte
+- Garder vos clés API sécurisées
+- Nous informer d’un accès non autorisé
+- Respecter les limites d’utilisation
+- Payer les frais à temps
 
-### 3.1 Création de Compte
-Pour utiliser notre Service, vous devez créer un compte en fournissant des informations exactes, actuelles et complètes. Vous êtes responsable de maintenir la confidentialité de vos identifiants de compte.
+## Utilisation Acceptable
 
-### 3.2 Responsabilité du Compte
-Vous êtes responsable de toutes les activités qui se produisent sous votre compte. Vous devez nous notifier immédiatement de toute utilisation non autorisée de votre compte.
+### Usages Autorisés
+- Extraction de données publiques
+- Recherche et analyse
+- Intelligence d’affaires
+- Recherche académique
 
-## 4. Politique d'Utilisation Acceptable
+### Usages Interdits
+- Extraction de contenus protégés sans permission
+- Violation des conditions d’utilisation des sites
+- Surcharge des serveurs cibles
+- Activités illégales
+- Spam ou contenu malveillant
 
-Vous acceptez de ne pas utiliser le Service pour :
+## Limites du Service
 
-- Violer toute loi ou réglementation applicable
-- Enfreindre les droits de propriété intellectuelle
-- Transmettre du contenu nuisible, offensant ou inapproprié
-- Tenter d'obtenir un accès non autorisé à nos systèmes
-- Interférer avec le bon fonctionnement du Service
+### Limites d’Utilisation
+- Selon votre abonnement
+- Limitation du débit appliquée
+- Politiques d’usage équitable
+- Frais de dépassement possibles
 
-## 5. Conditions de Paiement
+### Limites Techniques
+- Délai d’attente des requêtes
+- Limites de taille des données
+- Limites de requêtes simultanées
+- Restrictions géographiques
 
-### 5.1 Frais d'Abonnement
-L'utilisation du Service nécessite le paiement de frais d'abonnement comme indiqué dans nos plans tarifaires. Les frais sont facturés à l'avance sur une base mensuelle ou annuelle.
+## Conditions de Paiement
 
-### 5.2 Traitement des Paiements
-Les paiements sont traités par des processeurs de paiement tiers sécurisés. Nous ne stockons pas vos informations de paiement sur nos serveurs.
+### Frais d’Abonnement
+- Facturation mensuelle ou annuelle
+- Renouvellement automatique
+- Modifications tarifaires avec préavis
+- Remboursements selon notre politique
 
-### 5.3 Remboursements
-Les remboursements sont fournis selon notre politique de remboursement, disponible sur demande.
+### Offre Gratuite
+- Usage limité
+- Pas de garantie SLA
+- Restrictions possibles
 
-## 6. Données et Confidentialité
+## Propriété Intellectuelle
 
-### 6.1 Propriété des Données
-Vous conservez la propriété de toutes les données que vous téléchargez ou créez dans le Service. Nous ne revendiquons pas la propriété de votre contenu.
+### Vos Données
+- Vous conservez les droits sur vos données
+- Nous pouvons stocker temporairement les données extraites
+- Vous nous accordez une licence pour fournir le service
 
-### 6.2 Sécurité des Données
-Nous mettons en œuvre des mesures de sécurité standard de l'industrie pour protéger vos données. Cependant, aucun système n'est complètement sécurisé, et nous ne pouvons garantir une sécurité absolue.
+### Notre Service
+- ScrapeMaster est propriétaire de la plateforme
+- Vous ne devez pas décompiler ou rétroconcevoir
+- Respectez nos marques déposées
+- Aucune copie non autorisée
 
-### 6.3 Politique de Confidentialité
-Notre collecte et utilisation d'informations personnelles est régie par notre Politique de Confidentialité, qui est incorporée par référence dans ces Conditions.
+## Confidentialité et Données
 
-## 7. Disponibilité du Service
+### Gestion des Données
+- Voir notre Politique de Confidentialité
+- Protection de vos informations
+- Stockage temporaire des données
+- Transmission sécurisée des données
 
-### 7.1 Temps de Fonctionnement
-Nous nous efforçons de maintenir une haute disponibilité du service mais ne garantissons pas un accès ininterrompu au Service.
+### Conformité
+- Conformité au RGPD
+- Accords de traitement des données
+- Normes de sécurité
+- Audits réguliers
 
-### 7.2 Maintenance
-Nous pouvons effectuer une maintenance programmée qui affecte temporairement la disponibilité du service. Nous fournirons un préavis quand c'est possible.
+## Disponibilité du Service
 
-## 8. Propriété Intellectuelle
+### Temps de Fonctionnement
+- Nous visons une haute disponibilité
+- Pas de garantie de 100 % uptime
+- Fenêtres de maintenance planifiées
+- Mises à jour via la page de statut
 
-### 8.1 Nos Droits
-Le Service et son contenu original, ses fonctionnalités et sa fonctionnalité nous appartiennent et sont protégés par les lois internationales sur le droit d'auteur, les marques de commerce et autres lois sur la propriété intellectuelle.
+### Support
+- Support par email inclus
+- Temps de réponse selon le forfait
+- Documentation disponible
+- Forums communautaires
 
-### 8.2 Vos Droits
-Sous réserve de ces Conditions, nous vous accordons une licence limitée, non exclusive, non transférable pour utiliser le Service à des fins commerciales.
+## Limitation de Responsabilité
 
-## 9. Résiliation
+### Limitations du Service
+- Fournis « en l’état »
+- Pas de garanties explicites
+- Responsabilité limitée
+- Obligations d’indemnisation
 
-### 9.1 Résiliation par Vous
-Vous pouvez résilier votre compte à tout moment en contactant notre équipe de support ou via les paramètres de votre compte.
+### Dommages
+- Pas de dommages indirects
+- Plafond de responsabilité basé sur les frais payés
+- Exceptions en cas de force majeure
 
-### 9.2 Résiliation par Nous
-Nous pouvons résilier ou suspendre votre compte immédiatement si vous violez ces Conditions ou vous engagez dans des activités interdites.
+## Résiliation
 
-## 10. Limitation de Responsabilité
+### Par Vous
+- Annulation à tout moment
+- Export des données disponible
+- Remboursements au prorata
+- Suppression du compte
 
-Dans la mesure maximale permise par la loi, nous ne serons pas responsables de tout dommage indirect, accessoire, spécial, consécutif ou punitif résultant de votre utilisation du Service.
+### Par Nous
+- En cas de violation des conditions
+- Non-paiement
+- Activités illégales
+- Cessation du service
 
-## 11. Modifications des Conditions
+## Modifications des Conditions
 
-Nous nous réservons le droit de modifier ces Conditions à tout moment. Nous notifierons les utilisateurs des changements significatifs par email ou via le Service. L'utilisation continue du Service après les changements constitue l'acceptation des nouvelles Conditions.
+Nous pouvons modifier ces Conditions avec préavis. La poursuite de l’utilisation vaut acceptation des modifications.
 
-## 12. Loi Applicable
+## Droit Applicable
 
-Ces Conditions sont régies et interprétées conformément aux lois de [Juridiction], sans égard aux principes de conflit de lois.
+Ces Conditions sont régies par les lois de la Californie, États-Unis.
 
-## 13. Informations de Contact
+## Coordonnées
 
-Si vous avez des questions sur ces Conditions, veuillez nous contacter :
+Pour toute question concernant ces Conditions :
 
-- **Email** : legal@plateformesaas.com
-- **Adresse** : 123 Avenue des Affaires, Suite 100, Ville Tech, VT 12345
-
----
-
-*En utilisant notre Service, vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions d'Utilisation.*
+- Email : legal@scrapemaster.com  
+- Adresse : 123 Tech Street, San Francisco, CA 94105  
+- Téléphone : +1 (555) 123-4567

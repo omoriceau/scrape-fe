@@ -41,5 +41,97 @@
   "view_in_english": "View in English",
   "view_in_french": "Voir en Français",
   "page_not_found": "Page not found",
-  "check_markdown_file": "Check if the markdown file exists in the content directory"
+  "check_markdown_file": "Check if the markdown file exists in the content directory",
+  "nav": {
+    "home": "Home",
+    "login": "Login",
+    "register": "Sign Up",
+    "dashboard": "Dashboard",
+    "account": "Account",
+    "scrape": "Scrape",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero": {
+      "title": "Web Scraping Made Simple",
+      "subtitle": "Extract data from any website with our powerful API. Fast, reliable, and easy to use.",
+      "cta": "Start Scraping Now",
+      "try_free": "Try Free"
+    },
+    "how_it_works": {
+      "title": "How It Works",
+      "step1": {
+        "title": "1. Enter URL",
+        "description": "Simply paste the website URL you want to scrape"
+      },
+      "step2": {
+        "title": "2. Configure Options",
+        "description": "Choose your scraping preferences and data format"
+      },
+      "step3": {
+        "title": "3. Get Results",
+        "description": "Download your extracted data in seconds"
+      }
+    },
+    "features": {
+      "title": "Why Choose Our Service?",
+      "speed": {
+        "title": "Lightning Fast",
+        "description": "Get your data in seconds, not minutes"
+      },
+      "reliable": {
+        "title": "99.9% Uptime",
+        "description": "Reliable service you can count on"
+      },
+      "easy": {
+        "title": "Easy to Use",
+        "description": "No coding required - just enter a URL"
+      }
+    },
+    "pricing": {
+      "title": "Simple Pricing",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "features": ["5 requests per hour", "Basic data extraction", "JSON output"]
+      },
+      "pro": {
+        "title": "Pro",
+        "price": "$29",
+        "features": ["Unlimited requests", "Advanced scraping", "Multiple formats", "Priority support"]
+      }
+    }
+  },
+  "forms": {
+    "url_placeholder": "Enter website URL (e.g., https://example.com)",
+    "email_placeholder": "Enter your email",
+    "password_placeholder": "Enter your password",
+    "name_placeholder": "Enter your full name",
+    "confirm_password_placeholder": "Confirm your password"
+  },
+  "buttons": {
+    "scrape": "Scrape Now",
+    "login": "Login",
+    "register": "Create Account",
+    "download": "Download Results",
+    "try_again": "Try Again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete"
+  },
+  "status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed"
+  },
+  "errors": {
+    "invalid_url": "Please enter a valid URL",
+    "required_field": "This field is required",
+    "invalid_email": "Please enter a valid email address",
+    "password_too_short": "Password must be at least 6 characters",
+    "passwords_dont_match": "Passwords don't match",
+    "login_failed": "Invalid email or password",
+    "network_error": "Network error. Please try again."
+  }
 }
