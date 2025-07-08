@@ -5,7 +5,11 @@ import { mdsvex } from 'mdsvex';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: { 
-		adapter: adapter() 
+		adapter: adapter(),
+		alias: {
+      		'$paraglide/*': 'src/lib/i18n/*',
+      		'$lib/*': 'src/lib/*'
+    	}
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [

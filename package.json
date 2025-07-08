@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "npm run paraglide:compile && vite dev",
-    "build": "npx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/i18n && vite build",
+    "dev": "npm run paraglide:compile && npx vite dev",
+    "build": "npx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/paraglide && vite build",
     "preview": "vite preview",
     "paraglide:compile": "npx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/paraglide"
   },
@@ -28,6 +28,7 @@
     "@inlang/paraglide-js": "^2.1.0",
     "@inlang/paraglide-sveltekit": "^0.16.1",
     "dompurify": "^3.2.6",
+    "lucide-svelte": "^0.525.0",
     "mdsvex": "^0.12.6"
   }
 }

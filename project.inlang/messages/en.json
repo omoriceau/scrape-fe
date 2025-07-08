@@ -42,96 +42,86 @@
   "view_in_french": "Voir en Français",
   "page_not_found": "Page not found",
   "check_markdown_file": "Check if the markdown file exists in the content directory",
-  "nav": {
-    "home": "Home",
-    "login": "Login",
-    "register": "Sign Up",
-    "dashboard": "Dashboard",
-    "account": "Account",
-    "scrape": "Scrape",
-    "logout": "Logout"
-  },
-  "home": {
-    "hero": {
-      "title": "Web Scraping Made Simple",
-      "subtitle": "Extract data from any website with our powerful API. Fast, reliable, and easy to use.",
-      "cta": "Start Scraping Now",
-      "try_free": "Try Free"
-    },
-    "how_it_works": {
-      "title": "How It Works",
-      "step1": {
-        "title": "1. Enter URL",
-        "description": "Simply paste the website URL you want to scrape"
-      },
-      "step2": {
-        "title": "2. Configure Options",
-        "description": "Choose your scraping preferences and data format"
-      },
-      "step3": {
-        "title": "3. Get Results",
-        "description": "Download your extracted data in seconds"
-      }
-    },
-    "features": {
-      "title": "Why Choose Our Service?",
-      "speed": {
-        "title": "Lightning Fast",
-        "description": "Get your data in seconds, not minutes"
-      },
-      "reliable": {
-        "title": "99.9% Uptime",
-        "description": "Reliable service you can count on"
-      },
-      "easy": {
-        "title": "Easy to Use",
-        "description": "No coding required - just enter a URL"
-      }
-    },
-    "pricing": {
-      "title": "Simple Pricing",
-      "free": {
-        "title": "Free",
-        "price": "$0",
-        "features": ["5 requests per hour", "Basic data extraction", "JSON output"]
-      },
-      "pro": {
-        "title": "Pro",
-        "price": "$29",
-        "features": ["Unlimited requests", "Advanced scraping", "Multiple formats", "Priority support"]
-      }
-    }
-  },
-  "forms": {
-    "url_placeholder": "Enter website URL (e.g., https://example.com)",
-    "email_placeholder": "Enter your email",
-    "password_placeholder": "Enter your password",
-    "name_placeholder": "Enter your full name",
-    "confirm_password_placeholder": "Confirm your password"
-  },
-  "buttons": {
-    "scrape": "Scrape Now",
-    "login": "Login",
-    "register": "Create Account",
-    "download": "Download Results",
-    "try_again": "Try Again",
-    "cancel": "Cancel",
-    "save": "Save",
-    "delete": "Delete"
-  },
-  "status": {
-    "pending": "Pending",
-    "processing": "Processing",
-    "completed": "Completed",
-    "failed": "Failed"
-  },
-  "errors": {
-    "invalid_url": "Please enter a valid URL",
-    "required_field": "This field is required",
-    "invalid_email": "Please enter a valid email address",
-    "password_too_short": "Password must be at least 6 characters",
-    "passwords_dont_match": "Passwords don't match",
-    "login_failed": "Invalid email or password",
-    "network_error": "Network error. Please try again."
-  }
+  "nav_home": "Home",
+  "nav_login": "Login",
+  "nav_register": "Sign Up",
+  "nav_dashboard": "Dashboard",
+  "nav_account": "Account",
+  "nav_scrape": "Scrape",
+  "nav_logout": "Logout",
+  "nav_pricing": "Pricing",
+  "nav_docs": "Docs",
+  "footer_description": "The best way to scrape the web.",
+  "footer_product": "Product",
+  "footer_support": "Support",
+  "hero_title": "Web Scraping Made Simple",
+  "hero_description": "Extract data from any website with our powerful API. Fast, reliable, and easy to use.",
+  "hero_cta_primary": "Start Scraping Now",
+  "hero_cta_secondary": "Try Free",
+  "demo_title": "See It in Action",
+  "demo_description": "Enter a URL below to see how our scraper works.",
+  "features_title": "Why Choose Our Service?",
+  "features_subtitle": "We offer the best features for web scraping.",
+  "how_it_works_title": "How It Works",
+  "how_it_works_subtitle": "Our service is easy to use. Just follow these simple steps.",
+  "pricing_title": "Simple Pricing",
+  "pricing_subtitle": "Choose the plan that's right for you.",
+  "cta_title": "Ready to Get Started?",
+  "cta_description": "Sign up for a free account and start scraping today.",
+  "cta_primary": "Create Account",
+  "cta_secondary": "Contact Us",
+  "home_hero_title": "Web Scraping Made Simple",
+  "home_hero_subtitle": "Extract data from any website with our powerful API. Fast, reliable, and easy to use.",
+  "home_hero_cta": "Start Scraping Now",
+  "home_hero_try_free": "Try Free",
+  "home_how_it_works_title": "How It Works",
+  "home_how_it_works_step1_title": "1. Enter URL",
+  "home_how_it_works_step1_description": "Simply paste the website URL you want to scrape",
+  "home_how_it_works_step2_title": "2. Configure Options",
+  "home_how_it_works_step2_description": "Choose your scraping preferences and data format",
+  "home_how_it_works_step3_title": "3. Get Results",
+  "home_how_it_works_step3_description": "Download your extracted data in seconds",
+  "home_features_title": "Why Choose Our Service?",
+  "home_features_speed_title": "Lightning Fast",
+  "home_features_speed_description": "Get your data in seconds, not minutes",
+  "home_features_reliable_title": "99.9% Uptime",
+  "home_features_reliable_description": "Reliable service you can count on",
+  "home_features_easy_title": "Easy to Use",
+  "home_features_easy_description": "No coding required - just enter a URL",
+  "home_pricing_title": "Simple Pricing",
+  "home_pricing_free_title": "Free",
+  "home_pricing_free_price": "$0",
+  "home_pricing_free_features_0": "5 requests per hour",
+  "home_pricing_free_features_1": "Basic data extraction",
+  "home_pricing_free_features_2": "JSON output",
+  "home_pricing_pro_title": "Pro",
+  "home_pricing_pro_price": "$29",
+  "home_pricing_pro_features_0": "Unlimited requests",
+  "home_pricing_pro_features_1": "Advanced scraping",
+  "home_pricing_pro_features_2": "Multiple formats",
+  "home_pricing_pro_features_3": "Priority support",
+  "forms_url_placeholder": "Enter website URL (e.g., https://example.com)",
+  "forms_email_placeholder": "Enter your email",
+  "forms_password_placeholder": "Enter your password",
+  "forms_name_placeholder": "Enter your full name",
+  "forms_confirm_password_placeholder": "Confirm your password",
+  "buttons_scrape": "Scrape Now",
+  "buttons_login": "Login",
+  "buttons_register": "Create Account",
+  "buttons_download": "Download Results",
+  "buttons_try_again": "Try Again",
+  "buttons_cancel": "Cancel",
+  "buttons_save": "Save",
+  "buttons_delete": "Delete",
+  "status_pending": "Pending",
+  "status_processing": "Processing",
+  "status_completed": "Completed",
+  "status_failed": "Failed",
+  "errors_invalid_url": "Please enter a valid URL",
+  "errors_required_field": "This field is required",
+  "errors_invalid_email": "Please enter a valid email address",
+  "errors_password_too_short": "Password must be at least 6 characters",
+  "errors_passwords_dont_match": "Passwords don't match",
+  "errors_login_failed": "Invalid email or password",
+  "errors_network_error": "Network error. Please try again."
 }
