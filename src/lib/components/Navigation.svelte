@@ -30,6 +30,7 @@
     </div>
 
     <div class="navbar-end gap-2">
+      <a href="/register" class="btn btn-ghost btn-sm rounded-btn">Register</a>
       <ThemeToggle />
       <LanguageSwitcher {currentPage} />
       

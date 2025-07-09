@@ -1,6 +1,6 @@
 
 # Use a Node.js base image
-FROM node:20-alpine AS build
+FROM node:22-alpine AS build
 
 # Set the working directory
 WORKDIR /app
@@ -31,4 +31,4 @@ COPY --from=build /app/build ./build
 EXPOSE 3000
 
 # Command to run the application
-CMD ["node", "build"]
+CMD ["node", "build/index.js"]
