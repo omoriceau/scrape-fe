@@ -42,6 +42,8 @@
   /** @type {string} [proseClass="prose prose-lg max-w-none"] - CSS class for content wrapper */
   export let proseClass = "prose prose-lg max-w-none";
   
+  console.log(page);
+   
   $: pageTitle = page.meta.title || slug;
   $: hasMetadata = page.meta.title || page.meta.description || page.meta.date || page.meta.author;
   $: seoMeta = includeSeoMeta ? page.meta : {};

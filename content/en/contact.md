@@ -1,6 +1,10 @@
 ---
 title: "Contact Us"
+slug: contact
 description: "Get in touch with our team"
+author: "Support Team"
+date: 2025-01-01
+tags: contact, support, sales
 ---
 
 # Contact Us

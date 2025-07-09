@@ -36,10 +36,10 @@
           {m.footer_product?.() || 'Product'}
         </h3>
         <ul class="space-y-2">
-          <li><a href="/features" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
-          <li><a href="/pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-          <li><a href="/docs" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-          <li><a href="/api" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
+          <li><a href="/features" class="text-gray-400 hover:text-white transition-colors">{m.features()}</a></li>
+          <li><a href="/pricing" class="text-gray-400 hover:text-white transition-colors">{m.nav_pricing()}</a></li>
+          <li><a href="/docs" class="text-gray-400 hover:text-white transition-colors">{m.nav_docs()}</a></li>
+          <li><a href="/api" class="text-gray-400 hover:text-white transition-colors">{m.nav_api()}</a></li>
         </ul>
       </div>
       
@@ -49,22 +49,22 @@
           {m.footer_support?.() || 'Support'}
         </h3>
         <ul class="space-y-2">
-          <li><a href="/help" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
-          <li><a href="/contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-          <li><a href="/status" class="text-gray-400 hover:text-white transition-colors">Status</a></li>
-          <li><a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy</a></li>
+          <li><a href="/help" class="text-gray-400 hover:text-white transition-colors">{m.footer_help()}</a></li>
+          <li><a href="/contact" class="text-gray-400 hover:text-white transition-colors">{m.footer_contact()}</a></li>
+          <li><a href="/status" class="text-gray-400 hover:text-white transition-colors">{m.footer_status()}</a></li>
+          <li><a href="/privacy" class="text-gray-400 hover:text-white transition-colors">{m.footer_privacy()}</a></li>
         </ul>
       </div>
     </div>
     
     <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
       <p class="text-gray-400 text-sm">
-        © 2024 ScrapeMaster. All rights reserved.
+        {m.footer_copyright()}
       </p>
       <div class="flex space-x-6 mt-4 md:mt-0">
-        <a href="/terms" class="text-gray-400 hover:text-white text-sm transition-colors">Terms</a>
-        <a href="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy</a>
-        <a href="/cookies" class="text-gray-400 hover:text-white text-sm transition-colors">Cookies</a>
+        <a href="/terms" class="text-gray-400 hover:text-white text-sm transition-colors">{m.footer_terms()}</a>
+        <a href="/privacy" class="text-gray-400 hover:text-white text-sm transition-colors">{m.footer_privacy()}</a>
+        <a href="/cookies" class="text-gray-400 hover:text-white text-sm transition-colors">{m.footer_cookies()}</a>
       </div>
     </div>
   </div>

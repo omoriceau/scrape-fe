@@ -86,6 +86,27 @@ body {
   @apply my-2;
 }
 
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5em;
+  margin: 1rem 0;
+}
+
+.prose ol li {
+  margin: 0.5rem 0;
+  padding-left: 0.25rem;
+}
+
+.prose ol li::before {
+  display: none;
+  content: none;
+}
+
+.prose ol li::marker {
+  font-weight: 600;
+  color: #3b82f6;
+}
+
 /* Table hover styles */
 .prose table tr.hover:hover,
 .prose table tr.hover:nth-child(even):hover {

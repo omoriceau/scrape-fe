@@ -1,6 +1,10 @@
 ---
 title: "Politique de Confidentialité"
+slug: confidentialite
 description: "Comment nous traitons vos données"
+author: "Équipe Juridique"
+date: "2025-01-01"
+tags: confidentialité, juridique, politique
 lang: fr
 ---
 

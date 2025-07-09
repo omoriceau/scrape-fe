@@ -1,6 +1,10 @@
 ---
 title: "Features"
+slug: features
 description: "Powerful web scraping features"
+author: "Marketing Team"
+date: 2025-01-01
+tags: features, product, capabilities
 ---
 
 # Features

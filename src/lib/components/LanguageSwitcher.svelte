@@ -9,6 +9,7 @@
 
   const availableLanguages = getAvailableLanguages();
   
+ // console.log(availableLanguages)
   // Define language names directly since the specific message functions don't exist
   const languageNames = {
     'en': 'English',

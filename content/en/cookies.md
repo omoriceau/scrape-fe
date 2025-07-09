@@ -1,6 +1,10 @@
 ---
 title: "Cookie Policy"
+slug: cookies
 description: "How we use cookies"
+author: "Legal Team"
+date: 2025-01-01
+tags: cookies, legal, policy
 ---
 
 # Cookie Policy

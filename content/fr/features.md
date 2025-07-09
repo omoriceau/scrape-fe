@@ -1,6 +1,10 @@
 ---
 title: "Fonctionnalités"
+slug: fonctionnalites
 description: "Fonctionnalités puissantes de scraping web"
+author: "Équipe Marketing"
+date: 2025-01-01
+tags: fonctionnalités, produit, capacités
 ---
 
 # Fonctionnalités

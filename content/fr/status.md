@@ -1,6 +1,10 @@
 ---
 title: "État du Système"
+slug: statut
 description: "État et disponibilité du système ScrapeMaster"
+author: "Équipe d'ingénierie"
+date: "2025-01-01"
+tags: statut, système, disponibilité
 lang: fr
 ---
 

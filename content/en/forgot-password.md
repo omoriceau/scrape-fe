@@ -1,6 +1,10 @@
 ---
 title: "Password Reset"
+slug: forgot-password
 description: "Reset your password"
+author: "Support Team"
+date: 2025-01-01
+tags: forgot-password, account, support
 ---
 
 # Password Reset

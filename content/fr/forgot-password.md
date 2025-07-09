@@ -1,6 +1,10 @@
 ---
 title: "Réinitialisation du mot de passe"
+slug: mot-de-passe-oublie
 description: "Réinitialisez votre mot de passe"
+author: "Équipe de Support"
+date: 2025-01-01
+tags: mot-de-passe-oublié, compte, support
 ---
 
 # Réinitialisation du mot de passe

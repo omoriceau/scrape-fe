@@ -61,6 +61,7 @@ export function getPagesByLanguage(lang) {
  * @returns {Array} - Array of language codes
  */
 export function getAvailableLanguages() {
+  console.log(languageIndex, ">>>>>")
   return Object.keys(languageIndex);
 }
 

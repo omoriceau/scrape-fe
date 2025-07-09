@@ -1,6 +1,10 @@
 ---
 title: "Politique relative aux cookies"
+slug: cookies
 description: "Comment nous utilisons les cookies"
+author: "Équipe Juridique"
+date: 2025-01-01
+tags: cookies, juridique, politique
 ---
 
 # Politique relative aux cookies

@@ -1,6 +1,10 @@
 ---
 title: "Référence API"
+slug: api
 description: "Documentation complète de l'API"
+author: "Équipe de développement"
+date: 2025-01-01
+tags: api, documentation, référence, endpoints
 ---
 
 # Référence API

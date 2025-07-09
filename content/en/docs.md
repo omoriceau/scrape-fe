@@ -1,6 +1,10 @@
 ---
 title: "Documentation"
-description: "Complete guide to using ScrapeMaster API"
+slug: docs
+description: "Complete guide to using API"
+author: "Development Team"
+date: 2025-01-01
+tags: docs, documentation, guide, api
 ---
 
 # ScrapeMaster Documentation

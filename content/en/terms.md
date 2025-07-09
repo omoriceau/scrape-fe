@@ -3,7 +3,7 @@ title: "Terms of Service"
 slug: terms
 description: "Terms and conditions for using ScrapeMaster"
 author: Legal Team
-date: 2024-01-12
+date: 2025-01-01
 tags: terms, legal, service, agreement
 ---
 

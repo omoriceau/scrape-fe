@@ -3,7 +3,7 @@ title: "Pricing Plans"
 slug: pricing
 description: "Choose the perfect plan for your web scraping needs"
 author: SaaS Team
-date: 2024-01-08
+date: 2025-01-01
 tags: pricing, plans, subscription, business
 ---
 

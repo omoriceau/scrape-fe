@@ -1,6 +1,10 @@
 ---
 title: "Help Center"
+slug: help
 description: "Get help with ScrapeMaster"
+author: "Support Team"
+date: 2025-01-01
+tags: help, support, faq, documentation
 ---
 
 # Help Center
@@ -66,10 +70,10 @@ curl -H "Authorization: Bearer YOUR_KEY" \
 ```
 
 ### Common Error Codes
-- `400`: Invalid request parameters
-- `401`: Invalid API key
-- `429`: Rate limit exceeded
-- `500`: Server error
+- `400` : Invalid request parameters
+- `401` : Invalid API key
+- `429` : Rate limit exceeded
+- `500` : Server error
 
 ### Contact Support
 If you need additional help:

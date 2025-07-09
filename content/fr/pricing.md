@@ -3,7 +3,7 @@ title: "Forfaits et Tarifs"
 slug: forfaits
 description: "Choisissez le forfait parfait pour vos besoins en extraction web"
 author: Équipe SaaS
-date: 2024-01-08
+date: 2025-01-01
 tags: tarifs, forfaits, abonnement, entreprise
 lang: fr
 ---

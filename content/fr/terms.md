@@ -3,7 +3,7 @@ title: "Conditions d’Utilisation"
 slug: conditions
 description: "Conditions générales d’utilisation de ScrapeMaster"
 author: Équipe Juridique
-date: 2024-01-12
+date: 2025-01-01
 tags: conditions, juridique, service, accord
 lang: fr
 ---

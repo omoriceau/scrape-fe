@@ -1,8 +1,11 @@
 ---
 title: "Privacy Policy"
+slug: privacy-policy
 description: "How we handle your data"
+author: SaaS Team
+date: 2025-01-01
+tags: terms, legal, service, agreement
 ---
-
 # Privacy Policy
 
 Last updated: January 15, 2024

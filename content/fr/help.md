@@ -1,6 +1,10 @@
 ---
 title: "Centre d’Aide"
+slug: aide
 description: "Obtenez de l’aide avec ScrapeMaster"
+author: "Équipe de Support"
+date: 2025-01-01
+tags: aide, support, faq, documentation
 lang: fr
 ---
 

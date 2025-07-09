@@ -1,6 +1,10 @@
 ---
 title: "System Status"
+slug: status
 description: "ScrapeMaster system status and uptime"
+author: SaaS Team
+date: 2025-01-01
+tags: terms, legal, service, agreement
 ---
 
 # System Status
